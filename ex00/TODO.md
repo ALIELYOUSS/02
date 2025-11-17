@@ -33,3 +33,8 @@ Tests / verification
 
 Notes
 - Keep code small and clear; prefer converting to float for arithmetic in later exercises to avoid overflow.
+
+
+31...,...9,8,7,6,5,4,3,2,1,0,Bit Index
+\multicolumn{2}{,c,}{Integer Part},.,\multicolumn{8}{,c,}{Fractional Part},Conceptual,,,,
+\multicolumn{2}{,c,}{×2N},\multicolumn{1}{,c,}{},×211​,×221​,×231​,…,×261​,×271​
