@@ -1,30 +1,17 @@
 #include "Fixed.hpp"
 
 int main(void) {
+    Fixed a;
+    Fixed const b(Fixed(5.05f) * Fixed(2));
     
-    Fixed a(2.5f);
-    Fixed b(4.5f);
-    // Fixed c;
-    // c = b;
-    // if (a < b)
-    //     printf("haaaa  t overloadda had lqlawi\n");
-    // std::cout << a << std::endl;
-    // std::cout << "pre de " << --a << std::endl; 
-    // std::cout << "pre in " << ++a << std::endl; 
-    // std::cout << "post in " << a++ << std::endl; 
-    // std::cout << "post de " << a-- << std::endl;
-    // std::cout << a << " " << b << std::endl;
-    // Fixed d = a *b;
-    std::cout << (a*b) << std::endl;
-    // std::cout << "/ " << a / b << std::endl;
-    // std::cout << "+ " << a + b << std::endl;
-
-    // std::cout << a.getRawBits() << std::endl;
-    // std::cout << c.toFloat() << std::endl;
-    // std::cout << a.toInt() << std::endl;
-    // std::cout << a << std::endl;
-    return 0;
+    std::cout << a << std::endl;
+    std::cout << ++a << std::endl;
+    std::cout << a << std::endl;
+    std::cout << a++ << std::endl;
+    std::cout << a << std::endl;
+    
+    std::cout << b << std::endl;
+    
+    std::cout << Fixed::max(a, b) << std::endl;
+    
 }
-
-
-
